@@ -1,0 +1,44 @@
+! ===== XTerm =====
+
+XTerm*faceName: DejaVu Sans Mono
+XTerm*faceSize: 14
+
+! Appearance
+XTerm*background: #1e1e1e
+XTerm*foreground: #d4d4d4
+XTerm*cursorColor: #ffffff
+
+! Scrollback
+XTerm*saveLines: 10000
+
+! UTF-8
+XTerm*utf8: 2
+XTerm*eightBitInput: false
+
+! Copy selected text to CLIPBOARD instead of PRIMARY
+XTerm*selectToClipboard: true
+XTerm*keepClipboard: true
+
+! Familiar shortcuts
+XTerm*VT100.Translations: #override \
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+! 16-color palette
+XTerm*color0:  #1e1e1e
+XTerm*color1:  #f44747
+XTerm*color2:  #608b4e
+XTerm*color3:  #dcdcaa
+XTerm*color4:  #569cd6
+XTerm*color5:  #c586c0
+XTerm*color6:  #4ec9b0
+XTerm*color7:  #d4d4d4
+
+XTerm*color8:  #808080
+XTerm*color9:  #ff6b6b
+XTerm*color10: #89d185
+XTerm*color11: #f9f1a5
+XTerm*color12: #6cb6ff
+XTerm*color13: #d7a6ff
+XTerm*color14: #7ce7d8
+XTerm*color15: #ffffff
