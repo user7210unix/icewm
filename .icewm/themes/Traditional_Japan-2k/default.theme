@@ -1,0 +1,139 @@
+ThemeName="Traditional Japan HiDPI"
+ThemeDescription="Traditionelle japanische Papierwand-Aesthetik ohne Bilddateien fuer 2K"
+ThemeAuthor="Mark Ulrich, Gemini"
+
+Look=flat
+#Look=warp3
+
+TitleBarHeight=28
+TitleBarCentered=1
+TitleBarJustify=54
+RolloverButtonsSupported=1
+ShowMenuButtonIcon=0
+
+TitleButtonsLeft="rs"
+TitleButtonsRight="xmi"
+
+TitleButtonsSupported="xmisr"
+
+BorderSizeX=3
+BorderSizeY=3
+DlgBorderSizeX=2
+DlgBorderSizeY=2
+CornerSizeX=28
+CornerSizeY=28
+
+MenuIconSize=24
+SmallIconSize=32
+StatusIconSize=32
+LargeIconSize=48
+HugeIconSize=64
+
+# Passt die Button-Hintergründe und Ränder an die Titelleiste an
+ColorNormalButton="#2C221E"
+ColorButtonBg="#2C221E"
+ColorButtonFace="#2C221E"
+ColorButtonBorder="#2C221E"
+
+# Entfernt den 3D-Effekt der Buttons für einen flachen Look
+MinimizeButtonWidth=28
+MaximizeButtonWidth=28
+CloseButtonWidth=28
+
+# Zwingt die 3D-Licht- und Schattenkanten der warp3-Engine, 
+# mit der dunkelbraunen Titelleiste zu verschmelzen:
+ColorButtonBg="#2C221E"
+ColorButtonFace="#2C221E"
+ColorButtonBorder="#2C221E"
+
+# Wichtig fuer warp3: Die 3D-Schatten-Farben von IceWM ueberschreiben
+ColorButtonLight="#2C221E"
+ColorButtonShadow="#2C221E"
+ColorButtonBlack="#2C221E"
+
+# Stellt sicher, dass das aktive Fenster die gleichen Button-Farben nutzt
+ColorActiveButtonBg="#2C221E"
+ColorActiveButtonFace="#2C221E"
+
+
+ColorNormalBorder="#2C221E"
+ColorActiveBorder="#dec08a"
+
+#ColorActiveBorder="#223311"
+
+# Titelleiste (Aktives Fenster: Holz / Inaktiv: Reispapier)
+ColorNormalTitleBar="#2C221E"
+ColorNormalTitleBarText="#dec08a"
+ColorActiveTitleBar="#dec08a"
+ColorActiveTitleBarText="#2C221E"
+
+# Taskleiste (Helles Reispapier)
+PagerShowBorders=0
+ColorDefaultTaskBar="#dec08a"
+ColorClock="#dec08a"
+ColorClockText="#2C221E"
+
+# Programme in der Taskleiste
+ColorNormalTaskBarApp="#dec08a"
+ColorNormalTaskBarAppText="#2C221E"
+ColorActiveTaskBarApp="#A84343"       # Sakura-Rot fuer das aktive Fenster
+ColorActiveTaskBarAppText="#dec08a"
+ColorMinimizedTaskBarApp="#dec08a"
+ColorMinimizedTaskBarAppText="#9a8e77"
+
+# Menue & Popups
+ColorNormalMenu="#dec08a"
+ColorNormalMenuItemText="#2C221E"
+ColorActiveMenuItem="#A84343"
+ColorActiveMenuItemText="#dec08a"
+ColorDisabledMenuItemText="#9a8e77"
+ColorMenuSelection="#A84343"
+
+# Systemelemente
+ColorMoveSizeStatus="#2C221E"
+ColorMoveSizeStatusText="#dec08a"
+ColorQuickSwitch="#dec08a"
+ColorQuickSwitchText="#2C221E"
+ColorQuickSwitchActive="#A84343"
+ColorQuickSwitchSelectionText="#dec08a"
+
+ColorNormalButton="#dec08a"
+ColorNormalButtonText="#2C221E"
+ColorActiveWorkspaceButton="#A84343"
+ColorActiveWorkspaceButtonText="#dec08a"
+
+# --- FONTS (Scharf skaliert fuer 2K) ---
+TitleFontNameXft="sans-serif:size=11:bold"
+NormalTaskBarFontNameXft="sans-serif:size=12"
+ActiveTaskBarFontNameXft="sans-serif:size=12:bold"
+MenuFontNameXft="sans-serif:size=12"
+StatusFontNameXft="sans-serif:size=12"
+QuickSwitchFontNameXft="sans-serif:size=13"
+ClockFontNameXft="sans-serif:size=12"
+
+TaskBarClockLeds=1
+ColorClock="rgb:C0/C0/C0"
+ColorClockText="rgb:00/00/00"
+
+# Skaliert die System-Icons auf der rechten Seite hoch
+#TaskBarTrayIconSize=36
+#TaskBarStatusIconSize=36
+
+#-mu
+
+# Schaltet den 3D-Rahmeneffekt für alle Taskleisten-Buttons ab
+TaskbuttonLook=flat
+
+# Optional: Sorgt dafür, dass auch die Mini-Vorschau flach bleibt
+TaskBarFading=0
+
+TaskBarGraphHeight=32
+
+# --- DESKTOP ---
+DesktopBackgroundImage="background.png"
+DesktopBackgroundScaled=1
+#DesktopBackgroundColor="#242015"
+
+#DesktopBackgroundColor="#9e804a"
+
+DesktopBackgroundColor="#d5b471"
