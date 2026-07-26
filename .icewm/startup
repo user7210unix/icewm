@@ -1,0 +1,5 @@
+#!/bin/sh
+pcmanfm --desktop &
+nm-applet &
+~/.fehbg &
+picom &

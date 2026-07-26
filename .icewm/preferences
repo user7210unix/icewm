@@ -1,0 +1,25 @@
+Workspaces=4
+WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
+
+TaskBarAtTop=0
+TaskBarShowWorkspaces=1
+TaskBarShowWindowListMenu=1
+TaskBarShowShowDesktopButton=1
+QuickSwitch=1
+UseMouseWheel=1
+
+# Battery — auto-hides on desktops without one, exactly what you asked for
+TaskBarShowAPMStatus=1
+TaskBarShowAPMAuto=1
+TaskBarShowAPMTime=0
+
+# System tray for wifi applet (see note below)
+TaskBarShowTray=1
+
+# CPU graph widget (native icewm CPU meter is a bar-graph, not text — see below)
+TaskBarShowCPUStatus=1
+TaskBarCPULoadCombined=1
+CPUStatusCommand="xterm -e htop"
+
+TaskBarShowClock=1
+ClockFormat="%H:%M %d.%m"

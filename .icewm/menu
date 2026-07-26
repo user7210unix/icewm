@@ -1,0 +1,53 @@
+# ~/.icewm/menu — minimal, text-only
+
+# --- Pinned ---
+runonce "Firefox" - "firefox.Firefox" firefox
+runonce "Emacs"   - "emacs.Emacs"     emacsclient -c -a emacs
+prog    "Xterm"   - xterm
+runonce "Xfe"     - "thunar.Thunar"         thunar
+separator
+
+# --- Files ---
+menu "Files" - {
+    runonce "Thunar" - "thunar.Thunar" thunar
+    prog    "Thunar (root)" - xterm -e sudo thunar
+    prog    "Home terminal" - xterm -e sh -c "cd ~ && exec $SHELL"
+}
+
+# --- Internet ---
+menu "Internet" - {
+    runonce "Firefox" - "firefox.Firefox" firefox
+    prog    "Firefox (private)" - firefox --private-window
+    prog    "Tor" - thunde
+}
+
+# --- Development ---
+menu "Development" - {
+    runonce "Emacs" - "emacs.Emacs" emacsclient -c -a emacs
+    prog    "Emacs (no daemon)" - emacs -Q
+    prog    "Terminal (project dir)" - xterm -e sh -c "cd ~/projects && exec $SHELL"
+}
+
+# --- System ---
+menu "System" - {
+    prog "htop" - xterm -e htop
+    prog "System update" - xterm -hold -e sudo pacman -Syu
+    prog "Edit menu" - xterm -e $EDITOR ~/.icewm/menu
+    prog "Edit preferences" - xterm -e $EDITOR ~/.icewm/preferences
+    prog "Reload IceWM" - icesh reload
+}
+
+# --- Graphics / Multimedia ---
+menu "Graphics" - {
+    prog "GIMP" - gimp
+}
+menu "Multimedia" - {
+    prog "mpv" - mpv
+    prog "Mixer" - xterm -e alsamixer
+}
+
+menu "Session" - {
+    prog    "Lock screen" - xtrlock
+    restart "Restart IceWM" - icewm
+    prog    "Logout" - icewm-session --logout
+}
