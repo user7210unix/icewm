@@ -1,0 +1,49 @@
+key "Super+C" wmctrl -c :ACTIVE:
+
+# Terminal
+key "Super+Enter" xterm
+
+# File manager
+key "Super+E" thunar
+
+# Rofi application launcher
+key "Super+D" rofi -show drun
+
+
+# Switch workspace
+key "Super+1" wmctrl -s 0
+key "Super+2" wmctrl -s 1
+key "Super+3" wmctrl -s 2
+key "Super+4" wmctrl -s 3
+key "Super+5" wmctrl -s 4
+key "Super+6" wmctrl -s 5
+key "Super+7" wmctrl -s 6
+key "Super+8" wmctrl -s 7
+key "Super+9" wmctrl -s 8
+
+# Move active window to workspace
+key "Super+Shift+1" wmctrl -r :ACTIVE: -t 0
+key "Super+Shift+2" wmctrl -r :ACTIVE: -t 1
+key "Super+Shift+3" wmctrl -r :ACTIVE: -t 2
+key "Super+Shift+4" wmctrl -r :ACTIVE: -t 3
+key "Super+Shift+5" wmctrl -r :ACTIVE: -t 4
+
+
+# Volume up
+key "XF86AudioRaiseVolume" pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# Volume down
+key "XF86AudioLowerVolume" pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+# Mute
+key "XF86AudioMute" pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Brightness up
+key "XF86MonBrightnessUp" brightnessctl set +10%
+
+# Brightness down
+key "XF86MonBrightnessDown" brightnessctl set 10%-
+
+key "XF86AudioPlay" playerctl play-pause
+key "XF86AudioNext" playerctl next
+key "XF86AudioPrev" playerctl previous
