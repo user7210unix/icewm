@@ -1,0 +1,2 @@
+# icewm
+Reliable IceWM Configuration
